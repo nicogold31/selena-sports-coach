@@ -103,3 +103,27 @@ form button {
 form button:hover {
   background: #006f94;
 }
+
+table {  
+  border-collapse: collapse;  
+  width: 100%; /* Set the table width (e.g., 100% to fill the container) */  
+}  
+  
+td:first-child { /* Style the first column (icon column) */  
+  width: 80px;   /* Set the desired width for the icon column */  
+  text-align: center; /* Center-align the content (logos) */  
+  padding: 5px; /* Add padding around the content */  
+}  
+  
+td:last-child { /* Style the second column (text column) */  
+  width: auto;    /* Allow the text column to take up remaining space */  
+  text-align: left;   /* Left-align the text */  
+  padding: 9px; /* Add padding around the content */  
+}  
+  
+img {  
+  max-width: 100%; /* Make sure icons don't exceed the column width */  
+  height: auto;     /* Maintain aspect ratio */  
+  display: block; /* Remove extra space below image */  
+  margin: 0 auto; /* Center image horizontally */  
+}  
