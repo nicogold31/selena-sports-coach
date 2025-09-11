@@ -6,19 +6,24 @@ body {
 }
 
 header {
-  background: #333;
+  background: #e71818;
   color: #fff;
-  padding: 1rem;
+  padding: 3rem;
   text-align: center;
 }
 
 nav {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  background: #444;
-  padding: 0.5rem;
-  flex-wrap: wrap;
+    position: fixed;        /* Stays at the top */
+    top: 0;                 /* Align to the top */
+    left: 0;
+    width: 100%             /* Full width */
+    background: #444;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background: #444;
+    padding: 0.7rem;
+    z-index: 1000;          /* Make sure it stays above content */
 }
 
 nav a {
