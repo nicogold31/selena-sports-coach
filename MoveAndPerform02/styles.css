@@ -183,4 +183,8 @@ html, body {
     height: 60px;
   }
 
+  .home .here {
+    background-position: 70%;
+  }
+
 }
