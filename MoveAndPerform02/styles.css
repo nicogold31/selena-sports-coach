@@ -120,6 +120,8 @@ html, body {
 
 .intro-text {
   flex: 1;
+  max-width: 450px;
+  margin: auto;
   text-align: center;
 }
 
