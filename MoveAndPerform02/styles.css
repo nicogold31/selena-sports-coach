@@ -91,7 +91,7 @@ html, body {
 
 .home .hero { 
   height: 100vh;
-  background-image: url('images/hero.jpg');
+  background-image: url('images/hero-desktop.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -146,13 +146,6 @@ html, body {
   display: block;
 }
 
-/*.intro-inner {
-  max-width: 600px;
-  margin: auto;
-  padding: 30px 30px;
-}
-*/
-
 .three-column {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -184,7 +177,7 @@ html, body {
   }
 
   .home .hero {
-    background-position: 10% center;
+    background-image: url('images/hero-mobile.jpg');
   }
 
 }
