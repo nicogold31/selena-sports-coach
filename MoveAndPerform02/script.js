@@ -1,10 +1,24 @@
 const images = document.querySelectorAll('.carousel-image');
 
-const backgrounds = [
-  'images/bg1.jpg',
-  'images/bg2.jpg',
-  'images/bg3.jpg'
-];
+// Detect mobile screen
+if (window.innerWidth <= 768 ) {
+
+  //Mobile images
+  backgrounds = [
+    'images/bg1-mobile.jpg',
+    'images/bg2-mobile.jpg',
+    'images/bg3-mobile.jpg'
+  ];
+
+} else {
+  //Desktop images
+  backgrounds = [
+    'images/bg1-desktop.jpg',
+    'images/bg2-desktop.jpg',
+    'images/bg3-desktop.jpg'
+  ];
+
+}
 
 // Set background images
 images.forEach((img, index) => {
@@ -17,4 +31,4 @@ setInterval(() => {
   images[current].classList.remove('active');
   current = (current + 1) % images.length;
   images[current].classList.add('active');
-}, 5000); // change every 5 seconds
+}, 4000); // change every 4 seconds
