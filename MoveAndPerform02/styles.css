@@ -163,6 +163,63 @@ html, body {
   font-size: 3rem;
 }
 
+/* COACHING HERO */
+.coaching-hero {
+  height: 30vh;
+  background-image: url("images/coaching1-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.hero-title h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-title p {
+  font-size: 1.5rem;
+}
+
+.services {
+  padding: 80px 40px;
+  background: white;
+}
+
+.services-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+}
+
+.service {
+  text-align: center;
+}
+
+.service h2 {
+  margin-bottom: 20px;
+}
+
+.service img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.service p {
+  line-height: 1.6;
+}
+
 /* Adapting to Mobile Phone */
 @media (max-width: 768px) {
 
@@ -183,6 +240,10 @@ html, body {
 
   .home .hero {
     background-image: url('images/hero-mobile.jpg');
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
   }
 
 }
