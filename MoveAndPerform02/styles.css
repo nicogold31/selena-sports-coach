@@ -200,8 +200,8 @@ html, body {
   max-width: 1100px;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: 4fr 1fr 4fr; /* center column is narrower */
+  gap: 20px;
 }
 
 .service {
@@ -243,8 +243,15 @@ html, body {
   max-width: 1000px;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 4fr 1fr 4fr;
+  gap: 20px;
+}
+
+.info {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
 
 .info-box {
@@ -255,7 +262,7 @@ html, body {
   text-align: center;
   border-radius: 30px;
   /* info box border color */
-  border: 4px solid #584ad6;
+  border: 1px solid #8e8e8f;
   text-decoration: none;
   color: inherit;
 }
