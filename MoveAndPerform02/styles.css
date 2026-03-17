@@ -267,8 +267,28 @@ html, body {
   color: inherit;
 }
 
+.info-box-title {
+  margin-bottom: 30px;
+}
+
+.info-box-url {
+  margin-bottom: 20px;
+}
+
 .info-box h3 {
   margin-bottom: 10px;
+}
+
+.info-box a {
+  /* info box url links */
+  display: block;
+  font-size: 20px;
+}
+
+.info-box a::before {
+  content: "➤ ";
+  color: #007BFF;
+  font-weight: bold;
 }
 
 .info-box p {
